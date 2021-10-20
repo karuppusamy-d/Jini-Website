@@ -1,0 +1,56 @@
+:root {
+  scroll-behavior: smooth;
+
+  --primary-color: #3872c1;
+  --primary-dark: #26508d;
+  --font-color: #444444;
+
+  --primary-font: "Open Sans", sans-serif;
+  --secondary-font: "Nunito", sans-serif;
+
+  // Colors on Logo
+  // color: #26508d;
+  // color: #3872c1;
+  // color: #51aee5;
+}
+
+body {
+  font-family: var(--primary-font);
+  color: var(--font-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #717ff5;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--secondary-font);
+}
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+// Custom Margin
+.mt-6 {
+  margin-top: 6rem !important;
+  @media (min-width: 768px) {
+    margin-top: 4rem !important;
+  }
+}
