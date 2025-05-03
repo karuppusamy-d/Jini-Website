@@ -70,9 +70,10 @@ section {
     }
 
     &.list-disc {
+      margin-left: 20px;
       li {
         list-style: disc;
-        list-style-position: inside;
+        list-style-position: outside;
       }
     }
   }
