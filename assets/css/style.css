@@ -413,6 +413,10 @@ section ul li {
   color: #575757;
   margin-bottom: 6px;
 }
+section ul.list-disc li {
+  list-style: disc;
+  list-style-position: inside;
+}
 @media (min-width: 768px) {
   section {
     padding: 40px 0;
@@ -470,19 +474,23 @@ section ul li {
 }
 
 .sensor-hero,
+.led-driver-hero,
 .switches-hero {
   width: 100%;
   height: 100vh;
 }
 .sensor-hero .section-header p,
+.led-driver-hero .section-header p,
 .switches-hero .section-header p {
   color: #fff;
 }
 .sensor-hero .section-subtitle,
+.led-driver-hero .section-subtitle,
 .switches-hero .section-subtitle {
   color: #fff;
 }
 .sensor-hero .section-subtitle span,
+.led-driver-hero .section-subtitle span,
 .switches-hero .section-subtitle span {
   color: #ddd;
 }
@@ -496,6 +504,32 @@ section ul li {
 }
 @media (min-width: 1024px) {
   .sensor-hero {
+    background-attachment: fixed;
+  }
+}
+
+.led-driver-hero {
+  background: url(../img/backgrounds/image-7.jpg) rgba(0, 0, 0, 0.6);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+.led-driver-hero h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+}
+.led-driver-hero p {
+  color: #fff;
+  margin: 15px 0 0 0;
+  font-size: 20px;
+  font-family: var(--secondary-font);
+  max-width: 590px;
+}
+@media (min-width: 1024px) {
+  .led-driver-hero {
     background-attachment: fixed;
   }
 }

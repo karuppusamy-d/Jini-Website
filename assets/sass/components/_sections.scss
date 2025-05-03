@@ -63,6 +63,13 @@ section {
       color: #575757;
       margin-bottom: 6px;
     }
+
+    &.list-disc {
+      li {
+        list-style: disc;
+        list-style-position: inside;
+      }
+    }
   }
 
   @media (min-width: 768px) {
