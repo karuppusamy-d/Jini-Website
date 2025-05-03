@@ -151,6 +151,10 @@ h6 {
   transition: 0.3s;
 }
 
+.navbar.light a {
+  color: #fff;
+}
+
 .navbar a i {
   font-size: 12px;
   line-height: 0;
@@ -512,8 +516,8 @@ section ul.list-disc li {
 }
 
 .led-driver-hero {
-  background: url(../img/backgrounds/image-7.jpg) rgba(0, 0, 0, 0.6);
-  background-position: top center;
+  background: url(../img/backgrounds/image-8.jpg) rgba(0, 0, 0, 0.6);
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: overlay;
