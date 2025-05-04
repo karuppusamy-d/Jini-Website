@@ -679,6 +679,10 @@ section ul.list-disc li {
   }
 }
 
+.section-light {
+  background-color: #f3f4f7;
+}
+
 .lighting-section img {
   max-width: 500px;
 }
