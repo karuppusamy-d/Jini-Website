@@ -675,7 +675,7 @@ section ul.list-disc li {
 
 @media (min-width: 768px) {
   .features-section {
-    padding-bottom: 0px;
+    padding: 20px 0;
   }
 }
 
