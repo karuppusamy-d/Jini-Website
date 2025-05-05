@@ -106,6 +106,10 @@
   color: #fff;
 }
 
+.header.header-scrolled .navbar.light a {
+  color: var(--nav-color);
+}
+
 .navbar a i {
   font-size: 12px;
   line-height: 0;
