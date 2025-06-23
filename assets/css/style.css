@@ -1374,16 +1374,16 @@ section ul.list-disc li {
   z-index: 2;
 }
 .lutron-inspired .product-hero-modern .hero-content h1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 300;
   color: #2c3e50;
   letter-spacing: -0.02em;
   margin-bottom: 1.5rem;
   line-height: 1.2;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .lutron-inspired .product-hero-modern .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 }
 .lutron-inspired .product-hero-modern .hero-content .hero-subtitle {
@@ -1845,36 +1845,200 @@ section ul.list-disc li {
   animation-delay: 0.6s;
 }
 
-@keyframes pulse {
-  0%, 100% {
-    opacity: 0.7;
-    transform: scale(1);
+.lutron-hero-products {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, rgba(203, 184, 150, 0.8), rgba(224, 220, 210, 0.6));
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+}
+.lutron-hero-products .hero-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+@media (min-width: 576px) {
+  .lutron-hero-products .hero-title {
+    font-size: 2rem;
   }
-  50% {
-    opacity: 1;
-    transform: scale(1.2);
+}
+@media (min-width: 768px) {
+  .lutron-hero-products .hero-title {
+    font-size: 2rem;
+  }
+}
+.lutron-hero-products .category-toggle-section {
+  padding: 1rem 0 2rem 0;
+}
+.lutron-hero-products .category-toggle-section .category-toggle {
+  background: rgba(255, 255, 255, 0.95);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border-radius: 50px;
+  padding: 8px;
+  display: inline-flex;
+  gap: 4px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.lutron-hero-products .category-toggle-section .category-toggle .category-btn {
+  background: transparent;
+  border: none;
+  color: #6c757d;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+.lutron-hero-products .category-toggle-section .category-toggle .category-btn:hover {
+  color: #2c3e50;
+  background: rgba(0, 123, 255, 0.1);
+}
+.lutron-hero-products .category-toggle-section .category-toggle .category-btn.active {
+  background: #26508d;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.3);
+}
+.lutron-hero-products .product-grid-hero {
+  margin-top: auto;
+}
+.lutron-hero-products .product-grid-hero .hero-product-card {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 8px;
+}
+.lutron-hero-products .product-grid-hero .hero-product-card:hover {
+  z-index: 10;
+}
+.lutron-hero-products .product-grid-hero .hero-product-card:hover .product-bg-image {
+  transform: scale(1.05);
+}
+.lutron-hero-products .product-grid-hero .hero-product-card:hover .product-overlay {
+  background: rgba(0, 0, 0, 0.6);
+}
+.lutron-hero-products .product-grid-hero .hero-product-card:hover .product-overlay .product-title {
+  transform: translateY(-10px);
+  color: #ffffff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+.lutron-hero-products .product-grid-hero .hero-product-card .product-image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.lutron-hero-products .product-grid-hero .hero-product-card .product-image-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  mix-blend-mode: darken;
+  background: linear-gradient(in srgb 180deg, #262626 0%, rgba(55, 50, 49, 0) 33%);
+}
+.lutron-hero-products .product-grid-hero .hero-product-card .product-bg-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.lutron-hero-products .product-grid-hero .hero-product-card .product-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1.5rem;
+  transition: all 0.4s ease;
+}
+.lutron-hero-products .product-grid-hero .hero-product-card .product-overlay .product-title {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #ffffff;
+  margin: 0;
+  transition: all 0.4s ease;
+  letter-spacing: 0.02em;
+  z-index: 10;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+@media (min-width: 768px) {
+  .lutron-hero-products .product-grid-hero .hero-product-card .product-overlay .product-title {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 576px) {
+  .lutron-hero-products .product-grid-hero .hero-product-card .product-overlay .product-title {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .lutron-hero-products .product-grid-hero .hero-product-card .product-overlay {
+    padding: 2rem 2rem;
+  }
+}
+.lutron-hero-products .product-grid-hero .hero-product-card .product-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  text-decoration: none;
+}
+@media (max-width: 992px) {
+  .lutron-hero-products {
+    background-attachment: scroll;
+  }
+  .lutron-hero-products .product-grid-hero .hero-product-card {
+    height: 400px;
   }
 }
 @media (max-width: 768px) {
-  .products-grid .product-card .product-image {
-    height: 200px;
+  .lutron-hero-products {
+    padding-top: 80px;
+    min-height: auto;
   }
-  .products-grid .product-card .product-content {
-    padding: 1.5rem;
+  .lutron-hero-products .category-toggle-section {
+    padding: 2rem 0 1rem 0;
   }
-  .features-overview .feature-item,
-  .features-overview .benefit-item,
-  .features-overview .control-method,
-  .benefits-section .feature-item,
-  .benefits-section .benefit-item,
-  .benefits-section .control-method,
-  .control-methods .feature-item,
-  .control-methods .benefit-item,
-  .control-methods .control-method,
-  .control-features .feature-item,
-  .control-features .benefit-item,
-  .control-features .control-method {
-    padding: 1.5rem 0.5rem;
+  .lutron-hero-products .category-toggle-section .category-toggle .category-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  .lutron-hero-products .product-grid-hero .hero-product-card {
+    height: 300px;
+    margin-bottom: 1rem;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 /*--------------------------------------------------------------

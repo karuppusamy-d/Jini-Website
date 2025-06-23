@@ -517,15 +517,15 @@
       z-index: 2;
 
       h1 {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         font-weight: 300;
         color: #2c3e50;
         letter-spacing: -0.02em;
         margin-bottom: 1.5rem;
         line-height: 1.2;
 
-        @media (max-width: 768px) {
-          font-size: 2.5rem;
+        @media (min-width: 768px) {
+          font-size: 3.5rem;
         }
       }
 
@@ -1047,41 +1047,234 @@
   }
 }
 
-@keyframes pulse {
-  0%,
-  100% {
-    opacity: 0.7;
-    transform: scale(1);
+// Lutron-Style Hero with Product Grid
+.lutron-hero-products {
+  min-height: 100vh;
+  // background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+  //   url("../img/backgrounds/image-1.jpg");
+  background: linear-gradient(
+    to bottom right,
+    rgba(203, 184, 150, 0.8),
+    rgba(224, 220, 210, 0.6)
+  );
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+
+  .hero-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+    @media (min-width: 576px) {
+      font-size: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 2rem;
+    }
   }
 
-  50% {
-    opacity: 1;
-    transform: scale(1.2);
+  // Category Toggle Section
+  .category-toggle-section {
+    padding: 1rem 0 2rem 0;
+
+    .category-toggle {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      border-radius: 50px;
+      padding: 8px;
+      display: inline-flex;
+      gap: 4px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+
+      .category-btn {
+        background: transparent;
+        border: none;
+        color: #6c757d;
+        padding: 12px 24px;
+        border-radius: 25px;
+        font-size: 0.95rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        white-space: nowrap;
+
+        &:hover {
+          color: #2c3e50;
+          background: rgba(0, 123, 255, 0.1);
+        }
+
+        &.active {
+          background: #26508d;
+          color: white;
+          font-weight: 600;
+          box-shadow: 0 2px 8px rgba(44, 62, 80, 0.3);
+        }
+      }
+    }
+  }
+
+  // Product Grid Hero
+  .product-grid-hero {
+    margin-top: auto;
+
+    .hero-product-card {
+      position: relative;
+      height: 500px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+      border-radius: 8px;
+
+      &:hover {
+        // transform: translateY(-10px);
+        z-index: 10;
+
+        .product-bg-image {
+          transform: scale(1.05);
+        }
+
+        .product-overlay {
+          background: rgba(0, 0, 0, 0.6);
+
+          .product-title {
+            transform: translateY(-10px);
+            color: #ffffff;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+          }
+        }
+      }
+      .product-image-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          pointer-events: none;
+          mix-blend-mode: darken;
+          background: linear-gradient(
+            in srgb 180deg,
+            #262626 0%,
+            rgba(55, 50, 49, 0) 33%
+          );
+        }
+      }
+
+      .product-bg-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+      }
+
+      .product-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 1.5rem;
+
+        transition: all 0.4s ease;
+
+        .product-title {
+          font-size: 1rem;
+          font-weight: 300;
+          color: #ffffff;
+          margin: 0;
+          transition: all 0.4s ease;
+          letter-spacing: 0.02em;
+          z-index: 10;
+          text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+
+          @media (min-width: 768px) {
+            font-size: 2rem;
+          }
+
+          @media (min-width: 576px) {
+            font-size: 1.5rem;
+          }
+        }
+
+        @media (min-width: 768px) {
+          padding: 2rem 2rem;
+        }
+      }
+
+      .product-link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+        text-decoration: none;
+      }
+    }
+  }
+
+  // Responsive adjustments
+  @media (max-width: 992px) {
+    background-attachment: scroll; // Fix for mobile performance
+
+    .product-grid-hero {
+      .hero-product-card {
+        height: 400px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 80px;
+    min-height: auto;
+
+    .category-toggle-section {
+      padding: 2rem 0 1rem 0;
+
+      .category-toggle {
+        .category-btn {
+          padding: 10px 20px;
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    .product-grid-hero {
+      .hero-product-card {
+        height: 300px;
+        margin-bottom: 1rem;
+      }
+    }
   }
 }
 
-// Responsive adjustments
-@media (max-width: 768px) {
-  .products-grid {
-    .product-card {
-      .product-image {
-        height: 200px;
-      }
-
-      .product-content {
-        padding: 1.5rem;
-      }
-    }
+// Animation for smooth category transitions
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
   }
-
-  .features-overview,
-  .benefits-section,
-  .control-methods,
-  .control-features {
-    .feature-item,
-    .benefit-item,
-    .control-method {
-      padding: 1.5rem 0.5rem;
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

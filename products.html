@@ -95,7 +95,7 @@
 
   <body>
     <!-- ======= Header ======= -->
-    <header id="header" class="header fixed-top">
+    <header id="header" class="header header-hero fixed-top">
       <div
         class="container-fluid container-xl d-flex align-items-center justify-content-between"
       >
@@ -140,203 +140,123 @@
     <!-- End Header -->
 
     <main id="main">
-      <!-- ======= Hero Section ======= -->
-      <section class="intro-title mt-6 pb-0">
-        <div class="container">
-          <header class="section-header">
-            <p>Smart Home Solutions</p>
-          </header>
-          <div class="section-subtitle">
-            <p>
-              Transform your home with Jini's comprehensive range of smart
-              solutions. From intelligent lighting to automated curtains,
-              experience the future of home automation.
-            </p>
+      <!-- ======= Hero with Product Grid ======= -->
+      <section class="lutron-hero-products">
+        <!-- Category Toggle -->
+        <!-- <div class="category-toggle-section">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-auto">
+                <div class="category-toggle">
+                  <button
+                    class="category-btn active"
+                    data-category="residential"
+                  >
+                    Residential
+                  </button>
+                  <button class="category-btn" data-category="commercial">
+                    Commercial
+                  </button>
+                  <button class="category-btn" data-category="hospitality">
+                    Hospitality
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
-      <!-- End Hero -->
+        </div> -->
+        <!-- Hero Text Section -->
 
-      <!-- ======= Products Grid Section ======= -->
-      <section class="products-grid py-5">
-        <div class="container">
-          <div class="row g-4">
-            <!-- Smart Lighting Card -->
-            <div class="col-lg-6 col-md-6" data-aos="fade-up">
-              <div class="product-card h-100">
-                <div class="product-image">
-                  <img
-                    src="assets/img/new/Lighting/Living Room Ambiance.png"
-                    alt="Smart Lighting"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="product-content">
-                  <h3>Smart Lighting</h3>
-                  <p>
-                    Light up your life the smart way with Jini Smart Lighting —
-                    no rewiring needed! Control your lights with your phone or
-                    voice (Alexa/Google), set the mood with 16 million colors,
-                    and create custom scenes for every moment.
-                  </p>
-                  <ul class="product-features">
-                    <li>
-                      <i class="bi bi-check-circle"></i> No rewiring required
-                    </li>
-                    <li>
-                      <i class="bi bi-check-circle"></i> Voice control
-                      (Alexa/Google)
-                    </li>
-                    <li>
-                      <i class="bi bi-check-circle"></i> 16 million colors
-                    </li>
-                    <li><i class="bi bi-check-circle"></i> Made in India</li>
-                  </ul>
-                  <a href="/lighting.html" class="btn btn-primary"
-                    >Learn More</a
-                  >
+        <h2 class="hero-title" data-aos="fade-up">Our Solutions</h2>
+
+        <!-- Product Grid Hero -->
+        <div class="product-grid-hero">
+          <div class="container">
+            <div class="row g-4">
+              <!-- Smart Lighting Card -->
+              <div class="col-lg-3 col-6" data-aos="fade-up">
+                <div class="hero-product-card">
+                  <div class="product-image-container">
+                    <img
+                      src="assets/img/new/Lighting/Living Room Ambiance.png"
+                      alt="Smart Lighting"
+                      class="product-bg-image"
+                    />
+                    <div class="product-overlay">
+                      <div class="product-title">Lighting</div>
+                    </div>
+                    <a href="/lighting.html" class="product-link"></a>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <!-- Curtain Controller Card -->
-            <div
-              class="col-lg-6 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="product-card h-100">
-                <div class="product-image">
-                  <img
-                    src="assets/img/new/Curtain Controller/curtain-controller-room.png"
-                    alt="Curtain Controller"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="product-content">
-                  <h3>Curtain Controller</h3>
-                  <p>
-                    A modern alternative to traditional curtain switches. Make
-                    your mornings feel luxurious with Jini Curtain Controllers —
-                    glide your curtains open with a tap on the app, a simple
-                    voice command, or through our sleek, dedicated switchboards.
-                  </p>
-                  <ul class="product-features">
-                    <li>
-                      <i class="bi bi-check-circle"></i> App-controlled
-                      automation
-                    </li>
-                    <li>
-                      <i class="bi bi-check-circle"></i> Voice command support
-                    </li>
-                    <li>
-                      <i class="bi bi-check-circle"></i> Dedicated switch design
-                    </li>
-                    <li>
-                      <i class="bi bi-check-circle"></i> Advanced motor
-                      mechanism
-                    </li>
-                  </ul>
-                  <a href="/curtain-controller.html" class="btn btn-primary"
-                    >Learn More</a
-                  >
+              <!-- Window Treatments (Curtain Controller) Card -->
+              <div
+                class="col-lg-3 col-6"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="hero-product-card">
+                  <div class="product-image-container">
+                    <img
+                      src="assets/img/new/Curtain Controller/curtain-controller-room.png"
+                      alt="Window Treatments"
+                      class="product-bg-image"
+                    />
+                    <div class="product-overlay">
+                      <div class="product-title">Window Treatments</div>
+                    </div>
+                    <a href="/curtain-controller.html" class="product-link"></a>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <!-- Smart Switchboards Card -->
-            <div
-              class="col-lg-6 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div class="product-card h-100">
-                <div class="product-image">
-                  <img
-                    src="assets/img/new/Smart Switchboards/switch small.png"
-                    alt="Smart Switchboards"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="product-content">
-                  <h3>Smart Switchboards</h3>
-                  <p>
-                    Sleek touch panel smart switchboards that are customizable
-                    to match your interiors. Available in 1 to 24 modules with
-                    standard 12 amps capacity. High current switches of 40 amps
-                    available for AC, Geyser and other high current devices.
-                  </p>
-                  <ul class="product-features">
-                    <li>
-                      <i class="bi bi-check-circle"></i> Customizable design &
-                      colors
-                    </li>
-                    <li>
-                      <i class="bi bi-check-circle"></i> 1 to 24 module
-                      variations
-                    </li>
-                    <li>
-                      <i class="bi bi-check-circle"></i> Touch panel interface
-                    </li>
-                    <li>
-                      <i class="bi bi-check-circle"></i> Voice & app control
-                    </li>
-                  </ul>
-                  <a href="/smart-switchboards.html" class="btn btn-primary"
-                    >Learn More</a
-                  >
+              <!-- Controls (Smart Switchboards) Card -->
+              <div
+                class="col-lg-3 col-6"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="hero-product-card">
+                  <div class="product-image-container">
+                    <img
+                      src="assets/img/new/Smart Switchboards/switch small.png"
+                      alt="Smart Controls"
+                      class="product-bg-image"
+                    />
+                    <div class="product-overlay">
+                      <div class="product-title">Controls</div>
+                    </div>
+                    <a href="/smart-switchboards.html" class="product-link"></a>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <!-- Jini Screens Card -->
-            <div
-              class="col-lg-6 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="600"
-            >
-              <div class="product-card h-100">
-                <div class="product-image">
-                  <img
-                    src="assets/img/new/Screens/smart display wall.png"
-                    alt="Jini Screens"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="product-content">
-                  <h3>Jini Screens</h3>
-                  <p>
-                    Premium touch-panel LED screens available in 7-inch and
-                    4.3-inch sizes. Control multiple lights, create customized
-                    scenes, and manage your fan and AC — all from one sleek
-                    interface with high-resolution displays.
-                  </p>
-                  <ul class="product-features">
-                    <li>
-                      <i class="bi bi-check-circle"></i> 7" & 4.3" screen
-                      options
-                    </li>
-                    <li>
-                      <i class="bi bi-check-circle"></i> High-resolution
-                      displays
-                    </li>
-                    <li>
-                      <i class="bi bi-check-circle"></i> Multi-device control
-                    </li>
-                    <li>
-                      <i class="bi bi-check-circle"></i> Customizable scenes
-                    </li>
-                  </ul>
-                  <a href="/jini-screens.html" class="btn btn-primary"
-                    >Learn More</a
-                  >
+              <!-- Featured (Jini Screens) Card -->
+              <div
+                class="col-lg-3 col-6"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="hero-product-card">
+                  <div class="product-image-container">
+                    <img
+                      src="assets/img/new/Screens/smart display wall.png"
+                      alt="Featured Screens"
+                      class="product-bg-image"
+                    />
+                    <div class="product-overlay">
+                      <div class="product-title">Screens</div>
+                    </div>
+                    <a href="/jini-screens.html" class="product-link"></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- End Products Grid Section -->
+      <!-- End Hero with Product Grid -->
 
       <!-- ======= Features Section ======= -->
       <section class="features-overview py-5 bg-light">

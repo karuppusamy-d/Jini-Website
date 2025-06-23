@@ -225,3 +225,25 @@ function gtag() {
 gtag("js", new Date());
 
 gtag("config", "G-JV4TL6PVXH");
+
+// Category Toggle Functionality
+document.addEventListener("DOMContentLoaded", function () {
+  const categoryButtons = document.querySelectorAll(".category-btn");
+
+  categoryButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      // Remove active class from all buttons
+      categoryButtons.forEach((btn) => btn.classList.remove("active"));
+
+      // Add active class to clicked button
+      this.classList.add("active");
+
+      // Optional: Add category-specific functionality here
+      const category = this.getAttribute("data-category");
+      console.log("Selected category:", category);
+
+      // You can add different product sets or filtering logic here
+      // For now, we'll just update the button state
+    });
+  });
+});
