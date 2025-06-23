@@ -1425,6 +1425,11 @@ section ul.list-disc li {
   position: relative;
 }
 .lutron-inspired .product-hero-modern .hero-image img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 9/6;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
   transform: perspective(1000px) rotateY(-5deg) rotateX(5deg);
