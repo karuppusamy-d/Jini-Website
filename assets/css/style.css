@@ -1581,21 +1581,18 @@ section ul.list-disc li {
   padding-top: 80px;
 }
 .modern-hero-products .hero-title {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 600;
   color: var(--primary-dark);
   text-align: center;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  padding: 0 1rem;
 }
 @media (min-width: 576px) {
   .modern-hero-products .hero-title {
-    font-size: 2rem;
-  }
-}
-@media (min-width: 768px) {
-  .modern-hero-products .hero-title {
-    font-size: 2rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
   }
 }
 .modern-hero-products .product-grid-hero {
