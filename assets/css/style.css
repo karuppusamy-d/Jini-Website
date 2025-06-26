@@ -162,6 +162,10 @@ h6 {
   color: #fff;
 }
 
+.navbar.light.navbar-mobile a {
+  color: var(--nav-color);
+}
+
 .header.header-scrolled .navbar.light a {
   color: var(--nav-color);
 }
