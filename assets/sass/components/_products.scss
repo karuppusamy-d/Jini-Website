@@ -729,14 +729,19 @@
 .modern-hero-products {
   min-height: 100vh;
   // background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-  //   url("../img/backgrounds/image-1.jpg");
-  background: linear-gradient(
-    to bottom right,
-    rgba(203, 184, 150, 0.8),
-    rgba(224, 220, 210, 0.6)
-  );
+  //   url("../img/new/Lighting/living room dark.png");
+  // background: linear-gradient(
+  //   to bottom right,
+  //   rgba(203, 184, 150, 0.8),
+  //   rgba(224, 220, 210, 0.6)
+  // );
+  // background-position: center;
+
+  background: url("../img/new/Lighting/living room dark.png") rgba(0, 0, 0, 0.6);
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-blend-mode: overlay;
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
@@ -746,7 +751,7 @@
     font-size: 1.25rem;
     font-weight: 600;
     // color: var(--primary-dark);
-    color: var(--primary-dark);
+    color: #cdcdcd;
     text-align: center;
     margin-top: 1.5rem;
     margin-bottom: 3rem;
@@ -809,47 +814,48 @@
       overflow: hidden;
       cursor: pointer;
       transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-      border-radius: 8px;
+      border-radius: 12px;
 
       &:hover {
         // transform: translateY(-10px);
         z-index: 10;
 
         .product-bg-image {
-          transform: scale(1.05);
+          transform: scale(1.03);
         }
 
         .product-overlay {
-          background: rgba(0, 0, 0, 0.6);
+          background: rgba(0, 0, 0, 0.4);
 
           .product-title {
-            transform: translateY(-10px);
+            transform: translateY(-5px);
             color: #ffffff;
             text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
           }
         }
       }
+
       .product-image-container {
         position: relative;
         width: 100%;
         height: 100%;
         overflow: hidden;
 
-        &::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          pointer-events: none;
-          mix-blend-mode: darken;
-          background: linear-gradient(
-            in srgb 180deg,
-            #262626 0%,
-            rgba(55, 50, 49, 0) 33%
-          );
-        }
+        // &::after {
+        //   content: "";
+        //   position: absolute;
+        //   top: 0;
+        //   left: 0;
+        //   right: 0;
+        //   bottom: 0;
+        //   pointer-events: none;
+        //   mix-blend-mode: darken;
+        //   background: linear-gradient(
+        //     in srgb 180deg,
+        //     #262626 0%,
+        //     rgba(55, 50, 49, 0) 33%
+        //   );
+        // }
       }
 
       .product-bg-image {
@@ -893,7 +899,7 @@
         }
 
         @media (min-width: 768px) {
-          padding: 2rem 2rem;
+          padding: 1.75rem;
         }
       }
 

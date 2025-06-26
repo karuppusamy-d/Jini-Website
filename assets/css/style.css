@@ -1572,9 +1572,11 @@ section ul.list-disc li {
 
 .modern-hero-products {
   min-height: 100vh;
-  background: linear-gradient(to bottom right, rgba(203, 184, 150, 0.8), rgba(224, 220, 210, 0.6));
+  background: url("../img/new/Lighting/living room dark.png") rgba(0, 0, 0, 0.6);
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-blend-mode: overlay;
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
@@ -1583,7 +1585,7 @@ section ul.list-disc li {
 .modern-hero-products .hero-title {
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--primary-dark);
+  color: #cdcdcd;
   text-align: center;
   margin-top: 1.5rem;
   margin-bottom: 3rem;
@@ -1604,19 +1606,19 @@ section ul.list-disc li {
   overflow: hidden;
   cursor: pointer;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-  border-radius: 8px;
+  border-radius: 12px;
 }
 .modern-hero-products .product-grid-hero .hero-product-card:hover {
   z-index: 10;
 }
 .modern-hero-products .product-grid-hero .hero-product-card:hover .product-bg-image {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 .modern-hero-products .product-grid-hero .hero-product-card:hover .product-overlay {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.4);
 }
 .modern-hero-products .product-grid-hero .hero-product-card:hover .product-overlay .product-title {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
   color: #ffffff;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
@@ -1625,17 +1627,6 @@ section ul.list-disc li {
   width: 100%;
   height: 100%;
   overflow: hidden;
-}
-.modern-hero-products .product-grid-hero .hero-product-card .product-image-container::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  pointer-events: none;
-  mix-blend-mode: darken;
-  background: linear-gradient(in srgb 180deg, #262626 0%, rgba(55, 50, 49, 0) 33%);
 }
 .modern-hero-products .product-grid-hero .hero-product-card .product-bg-image {
   width: 100%;
@@ -1679,7 +1670,7 @@ section ul.list-disc li {
 }
 @media (min-width: 768px) {
   .modern-hero-products .product-grid-hero .hero-product-card .product-overlay {
-    padding: 2rem 2rem;
+    padding: 1.75rem;
   }
 }
 .modern-hero-products .product-grid-hero .hero-product-card .product-link {
