@@ -1678,6 +1678,7 @@ section ul.list-disc li {
 
 .modern-hero-products {
   min-height: 100vh;
+  margin-top: 80px;
   background: url("../img/new/Lighting/living room dark.png") rgba(0, 0, 0, 0.6);
   background-position: center center;
   background-repeat: no-repeat;
@@ -1686,25 +1687,35 @@ section ul.list-disc li {
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
-  padding-top: 80px;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+@media (max-width: 992px) {
+  .modern-hero-products {
+    background-attachment: scroll;
+    margin-top: 84px;
+  }
+}
+@media (max-width: 768px) {
+  .modern-hero-products {
+    min-height: auto;
+  }
 }
 .modern-hero-products .hero-title {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #cdcdcd;
   text-align: center;
   margin-top: 1.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   padding: 0 1rem;
 }
 @media (min-width: 576px) {
   .modern-hero-products .hero-title {
     margin-top: 2rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
-}
-.modern-hero-products .product-grid-hero {
-  margin-top: auto;
 }
 .modern-hero-products .product-grid-hero .hero-product-card {
   position: relative;
@@ -1789,26 +1800,12 @@ section ul.list-disc li {
   text-decoration: none;
 }
 @media (max-width: 992px) {
-  .modern-hero-products {
-    background-attachment: scroll;
-  }
-  .modern-hero-products .product-grid-hero .hero-product-card {
+  .modern-hero-products .product-grid-hero .product-grid-hero .hero-product-card {
     height: 400px;
   }
 }
 @media (max-width: 768px) {
-  .modern-hero-products {
-    padding-top: 80px;
-    min-height: auto;
-  }
-  .modern-hero-products .category-toggle-section {
-    padding: 2rem 0 1rem 0;
-  }
-  .modern-hero-products .category-toggle-section .category-toggle .category-btn {
-    padding: 10px 20px;
-    font-size: 0.9rem;
-  }
-  .modern-hero-products .product-grid-hero .hero-product-card {
+  .modern-hero-products .product-grid-hero .product-grid-hero .hero-product-card {
     height: 300px;
     margin-bottom: 1rem;
   }
