@@ -209,7 +209,7 @@ if (select(".testimonials-swiper")) {
         centeredSlides: true,
       },
       1024: {
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 30,
         centeredSlides: true,
       },
