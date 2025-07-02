@@ -1469,7 +1469,7 @@ section ul.list-disc li {
   padding: 3rem 0;
   position: relative;
 }
-.lutron-inspired .feature-section-modern:nth-child(even) {
+.lutron-inspired .feature-section-modern:nth-child(odd) {
   background: #f8f9fa;
 }
 .lutron-inspired .feature-section-modern .section-header {
