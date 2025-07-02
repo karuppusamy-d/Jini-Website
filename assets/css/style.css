@@ -80,13 +80,17 @@ h6 {
   padding: 15px 8px;
 }
 
-.header-dark.header-scrolled {
-  background: rgba(0, 0, 0, 0.69);
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
-}
-.header-dark.header-scrolled .navbar a {
+.header-dark .navbar a {
   color: #fff;
+}
+.header-dark .mobile-nav-toggle {
+  color: #fff;
+}
+.header-dark.header-scrolled {
+  background: rgba(0, 0, 0, 0.8);
+}
+.header-dark .navbar.navbar-mobile a {
+  color: var(--nav-color);
 }
 
 .header .logo {
