@@ -80,6 +80,15 @@ h6 {
   padding: 15px 8px;
 }
 
+.header-dark.header-scrolled {
+  background: rgba(0, 0, 0, 0.69);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+.header-dark.header-scrolled .navbar a {
+  color: #fff;
+}
+
 .header .logo {
   line-height: 0;
 }
@@ -1681,7 +1690,7 @@ section ul.list-disc li {
 
 .modern-hero-products {
   min-height: 100vh;
-  margin-top: 80px;
+  padding-top: 80px;
   background: url("../img/new/Lighting/living-room-dark.jpg") rgba(0, 0, 0, 0.6);
   background-position: center center;
   background-repeat: no-repeat;
@@ -1697,7 +1706,7 @@ section ul.list-disc li {
 @media (max-width: 992px) {
   .modern-hero-products {
     background-attachment: scroll;
-    margin-top: 84px;
+    padding-top: 84px;
   }
 }
 @media (max-width: 768px) {

@@ -23,6 +23,23 @@
   padding: 15px 8px;
 }
 
+.header-dark.header-scrolled {
+  background: rgba(0, 0, 0, 0.69);
+  backdrop-filter: blur(2px);
+
+  .navbar a {
+    color: #fff;
+  }
+
+  // .logo span {
+  //   color: #ffffff;
+  // }
+
+  // .logo img {
+  //   content: url("/assets/img/logo-white.png");
+  // }
+}
+
 .header .logo {
   line-height: 0;
 }
