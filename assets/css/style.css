@@ -867,9 +867,6 @@ section ul.list-disc li {
 /*--------------------------------------------------------------
 # Testimonials Carousel (Products Page)
 --------------------------------------------------------------*/
-.product-testimonials {
-  background: #f8f9fa;
-}
 .product-testimonials .section-header h2 {
   color: var(--primary-color);
   font-weight: 700;
@@ -1311,30 +1308,54 @@ section ul.list-disc li {
   line-height: 1.6;
 }
 
-.cta-section {
-  background: linear-gradient(135deg, #467dcb 0%, #26508d 100%);
-  color: white;
-}
-.cta-section h2 {
-  color: white;
-  font-weight: 700;
-}
-.cta-section .lead {
-  opacity: 0.9;
-}
 .cta-section .btn-primary {
-  background: white;
-  color: #667eea;
+  background: var(--primary-color);
+  color: white;
   border: none;
+  font-size: 1rem;
   font-weight: 700;
-  padding: 1rem 3rem;
+  padding: 0.65rem 1.5rem;
   border-radius: 50px;
   transition: all 0.3s ease;
 }
 .cta-section .btn-primary:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
+  opacity: 0.9;
+}
+.cta-section h2 {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+.cta-section .lead {
+  font-size: 1rem;
+  color: var(--font-color);
+}
+.cta-section.dark {
+  background: linear-gradient(135deg, #467dcb 0%, #26508d 100%);
+}
+.cta-section.dark h2 {
+  color: white;
+}
+.cta-section.dark .lead {
+  color: white;
+  opacity: 0.9;
+}
+.cta-section.dark .btn-primary {
+  background: white;
+  color: var(--primary-color);
+}
+.cta-section.dark .btn-primary:hover {
+  opacity: 1;
   background: #f8f9fa;
+}
+@media (min-width: 576px) {
+  .cta-section h2 {
+    font-size: 1.25rem;
+  }
+  .cta-section .btn-primary {
+    padding: 0.75rem 2rem;
+  }
 }
 
 .lutron-inspired .product-hero-modern {

@@ -309,32 +309,64 @@
 }
 
 .cta-section {
-  // background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  background: linear-gradient(135deg, #467dcb 0%, #26508d 100%);
-  color: white;
-
-  h2 {
-    color: white;
-    font-weight: 700;
-  }
-
-  .lead {
-    opacity: 0.9;
-  }
-
   .btn-primary {
-    background: white;
-    color: #667eea;
+    background: var(--primary-color);
+    color: white;
     border: none;
+    font-size: 1rem;
     font-weight: 700;
-    padding: 1rem 3rem;
+    padding: 0.65rem 1.5rem;
     border-radius: 50px;
     transition: all 0.3s ease;
 
     &:hover {
       transform: translateY(-3px);
       box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
-      background: #f8f9fa;
+      opacity: 0.9;
+    }
+  }
+
+  h2 {
+    color: var(--primary-color);
+    font-weight: 700;
+  }
+
+  .lead {
+    font-size: 1rem;
+    color: var(--font-color);
+  }
+
+  &.dark {
+    // background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #467dcb 0%, #26508d 100%);
+
+    h2 {
+      color: white;
+    }
+
+    .lead {
+      color: white;
+      opacity: 0.9;
+    }
+
+    .btn-primary {
+      background: white;
+      color: var(--primary-color);
+
+      &:hover {
+        opacity: 1;
+        background: #f8f9fa;
+      }
+    }
+  }
+
+  @media (min-width: 576px) {
+    h2 {
+      font-size: 1.25rem;
+    }
+
+    .btn-primary {
+      padding: 0.75rem 2rem;
     }
   }
 }
