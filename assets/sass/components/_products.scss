@@ -442,6 +442,12 @@
           transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
         }
       }
+
+      &.no-hover {
+        img {
+          transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+        }
+      }
     }
 
     @media (min-width: 992px) {

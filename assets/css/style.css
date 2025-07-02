@@ -1422,6 +1422,9 @@ section ul.list-disc li {
 .lutron-inspired .product-hero-modern .hero-image img:hover {
   transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
 }
+.lutron-inspired .product-hero-modern .hero-image.no-hover img {
+  transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+}
 @media (min-width: 992px) {
   .lutron-inspired .product-hero-modern {
     margin-top: 84px;
