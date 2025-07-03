@@ -1288,7 +1288,9 @@ section ul.list-disc li {
 }
 
 .installation-section .installation-option {
-  padding: 2rem 1rem;
+  padding: 2rem 0.5rem;
+  max-width: 700px;
+  margin: 0 auto;
 }
 .installation-section .installation-option .install-icon {
   width: 70px;
@@ -1310,6 +1312,11 @@ section ul.list-disc li {
 .installation-section .installation-option p {
   color: #6c757d;
   line-height: 1.6;
+}
+@media (min-width: 576px) {
+  .installation-section .installation-option {
+    padding: 2rem 1rem;
+  }
 }
 
 .cta-section .btn-primary {
