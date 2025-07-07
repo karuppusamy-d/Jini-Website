@@ -1335,8 +1335,9 @@ section ul.list-disc li {
   opacity: 0.9;
 }
 .cta-section h2 {
-  color: var(--primary-color);
-  font-weight: 700;
+  font-size: 2rem;
+  color: var(--primary-dark);
+  font-weight: 400;
 }
 .cta-section .lead {
   font-size: 1rem;
@@ -1361,9 +1362,6 @@ section ul.list-disc li {
   background: #f8f9fa;
 }
 @media (min-width: 576px) {
-  .cta-section h2 {
-    font-size: 1.25rem;
-  }
   .cta-section .btn-primary {
     padding: 0.75rem 2rem;
   }
@@ -1496,7 +1494,7 @@ section ul.list-disc li {
   margin-bottom: 1rem;
 }
 .lutron-inspired .feature-section-modern .section-header h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 300;
   color: var(--primary-dark);
   margin-bottom: 1rem;
@@ -1504,7 +1502,7 @@ section ul.list-disc li {
 }
 @media (min-width: 768px) {
   .lutron-inspired .feature-section-modern .section-header h2 {
-    font-size: 2.5rem;
+    font-size: 2.125rem;
   }
 }
 .lutron-inspired .feature-section-modern .section-header .section-subtitle {
@@ -1535,11 +1533,16 @@ section ul.list-disc li {
   flex: 1;
 }
 .lutron-inspired .feature-section-modern .feature-content .content-text h3 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 400;
   color: var(--primary-dark);
   margin-bottom: 1.5rem;
   letter-spacing: -0.01em;
+}
+@media (min-width: 576px) {
+  .lutron-inspired .feature-section-modern .feature-content .content-text h3 {
+    font-size: 2rem;
+  }
 }
 .lutron-inspired .feature-section-modern .feature-content .content-text p {
   font-size: 1.1rem;

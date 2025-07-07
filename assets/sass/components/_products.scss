@@ -333,8 +333,9 @@
   }
 
   h2 {
-    color: var(--primary-color);
-    font-weight: 700;
+    font-size: 2rem;
+    color: var(--primary-dark);
+    font-weight: 400;
   }
 
   .lead {
@@ -367,10 +368,6 @@
   }
 
   @media (min-width: 576px) {
-    h2 {
-      font-size: 1.25rem;
-    }
-
     .btn-primary {
       padding: 0.75rem 2rem;
     }
@@ -521,14 +518,14 @@
       }
 
       h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: 300;
         color: var(--primary-dark);
         margin-bottom: 1rem;
         letter-spacing: -0.01em;
 
         @media (min-width: 768px) {
-          font-size: 2.5rem;
+          font-size: 2.125rem;
         }
       }
 
@@ -560,11 +557,15 @@
         flex: 1;
 
         h3 {
-          font-size: 2rem;
+          font-size: 1.75rem;
           font-weight: 400;
           color: var(--primary-dark);
           margin-bottom: 1.5rem;
           letter-spacing: -0.01em;
+
+          @media (min-width: 576px) {
+            font-size: 2rem;
+          }
         }
 
         p {
