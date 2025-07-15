@@ -92,6 +92,32 @@
 
     <!-- Main JS File -->
     <script defer src="assets/js/main.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11030340395"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-11030340395');
+    </script>
+    <!-- Event snippet for Get_Quote_CTA_&amp;_WA_Click conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+    function gtag_report_conversion(url) {
+      console.log("in gtag_report_conversion");
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-11030340395/b7KNCLvZgu8aEKvG1osp',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
   </head>
 
   <body>
@@ -388,6 +414,7 @@
 
     <a
       target="_blank"
+      onclick="gtag_report_conversion()"
       href="https://api.whatsapp.com/send?phone=918591353029&text=Hello%2C%20I%20am%20interested%20in%20your%20product."
       class="whatsapp active d-flex align-items-center justify-content-center"
       ><i class="bi bi-whatsapp"></i
