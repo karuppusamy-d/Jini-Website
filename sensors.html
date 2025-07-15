@@ -89,30 +89,35 @@
     <!-- Main JS File -->
     <script defer src="assets/js/main.js"></script>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11030340395"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-11030340395"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'AW-11030340395');
+      gtag("config", "AW-11030340395");
     </script>
     <!-- Event snippet for Get_Quote_CTA_&amp;_WA_Click conversion page
     In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
     <script>
-    function gtag_report_conversion(url) {
-      console.log("in gtag_report_conversion");
-      var callback = function () {
-        if (typeof(url) != 'undefined') {
-          window.location = url;
-        }
-      };
-      gtag('event', 'conversion', {
-          'send_to': 'AW-11030340395/b7KNCLvZgu8aEKvG1osp',
-          'event_callback': callback
-      });
-      return false;
-    }
+      function gtag_report_conversion(url) {
+        console.log("in gtag_report_conversion");
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-11030340395/b7KNCLvZgu8aEKvG1osp",
+          event_callback: callback,
+        });
+        return false;
+      }
     </script>
   </head>
 
@@ -129,10 +134,10 @@
 
         <nav id="navbar" class="navbar">
           <ul>
-            <li><a class="nav-link" href="/index.html">Overview</a></li>
+            <li><a class="nav-link" href="/">Overview</a></li>
 
             <li class="dropdown">
-              <a href="/products.html"
+              <a href="/"
                 ><span>Products</span> <i class="bi bi-chevron-down"></i
               ></a>
               <ul>
@@ -397,7 +402,7 @@
               <ul>
                 <li>
                   <i class="bi bi-chevron-right"></i>
-                  <a href="/index.html">Home</a>
+                  <a href="/">Home</a>
                 </li>
                 <li>
                   <i class="bi bi-chevron-right"></i>

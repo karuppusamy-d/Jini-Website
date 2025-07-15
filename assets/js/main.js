@@ -113,8 +113,8 @@ on(
   ".navbar .dropdown > a",
   function (e) {
     if (
-      select("#navbar").classList.contains("navbar-mobile") &&
-      e.target.tagName.toLowerCase() === "i"
+      select("#navbar").classList.contains("navbar-mobile")
+      // && e.target.tagName.toLowerCase() === "i"
     ) {
       e.preventDefault();
       this.nextElementSibling.classList.toggle("dropdown-close");
